@@ -6,6 +6,7 @@ const Missions = () => {
   useEffect(() => {
     // Fetch data from an API (e.g., SpaceX or NASA)
     fetch('https://api.spacexdata.com/v4/launches')
+    // fetch('http://localhost:5001/missions')
       .then(response => response.json())
       .then(data => setMissions(data))
       .catch(error => console.error('Error fetching missions:', error));
